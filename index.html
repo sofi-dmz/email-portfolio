@@ -18,9 +18,11 @@
             background-color: #f9f9f9;
         }
 
-        p, ul,a {
+        p,
+        ul,
+        a {
             font-family: "Space Mono", monospace;
-            
+
         }
 
         h1,
@@ -31,214 +33,195 @@
             font-weight: 700;
             text-transform: uppercase;
         }
+        
 
         .container {
-            width: 100%;
+            width: 80%;
             max-width: 600px;
             margin: 0 auto;
             padding: 20px;
             text-align: center;
-            border: 2px solid rgb(49, 49, 49);
+            border: 2px solid #000;
             overflow: hidden;
-        }
-
-        .logo img, .footer img {
-            max-width: 20%;
-            height: auto;
-        }
-
-        .div .profile-picture{
-            border-radius: 50%;
-        }
-    
-        .spacer {
-            height: 30px;
-        }
-
-        .footer {
-            margin-top: 50px;
-            border-top: 2px solid black;
-            color: rgb(0, 0, 0);
-            padding: 20px;
-            text-align: center;
-        }
-
-        .button-54 {
-            font-family: "Open Sans", sans-serif;
-            font-size: 16px;
-            letter-spacing: 2px;
-            text-decoration: none;
-            text-transform: uppercase;
-            color: #000;
-            cursor: pointer;
-            border: 3px solid;
-            padding: 0.25em 0.5em;
-            box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-            position: relative;
-            user-select: none;
-            -webkit-user-select: none;
-            touch-action: manipulation;
-        }
-
-        .img{
-            max-width: 20%;
-        }
-
-        .button-54:active {
-            box-shadow: 0px 0px 0px 0px;
-            top: 5px;
-            left: 5px;
-        }
-
-        @media (min-width: 768px) {
-            .button-54 {
-                padding: 0.25em 0.75em;
-            }
-        }
-
-        .buttons {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .buttons a {
-            padding: 10px 20px;
-            margin: 0 10px;
-            background-color: #000;
-            color: white;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-        }
-
-        .buttons button:hover {
-            background-color: #530083;
-        }
-
-        a{
-            text-decoration: none;
-            padding: 10px 40px;
-            margin: 0 10px;
-            background-color: #000;
-            color: white;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-        }
-
-        .columns {
-            display: grid;
-            grid-gap: 20px;
-        }
-
-        .columns-2 {
-            grid-template-columns: 1fr 1fr;
-        }
-
-        .skills-section {
-            display: grid;
-            grid-gap: 50px;
-            grid-template-columns: 3fr 3fr 3fr;
-            align-items: center;
+            background-color: #d1e2ff;
             
+background-image: linear-gradient(180deg, #e2edff 0%, #ffccf0 100%);
+
         }
 
-        .skills-list {
-            padding: 10px;
+        table {
+            table-layout: fixed;
+            width: 100%;
+            border-collapse: separate;
+            margin: 10px 0;
         }
 
-        .skills-list ul {
-            list-style-type: none;
-            padding: 0;
+
+        tr td ul li{
+            list-style: none;
             text-align: left;
+
         }
 
-        .skills-list li {
-            margin-bottom: 5px;
+        
+        .first-button { 
+            padding: 10px 40px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
         }
+
+        .bi{
+            font-size: 20px;
+        }
+
+        .spacer {
+            height: 40px;
+        }
+
+
+        .footer, .header {
+            border-top: 2px solid black;
+        }
+
+
+
     </style>
 </head>
-
 <body>
     <div class="container">
+        
         <!-- Logo section -->
-        <div class="logo">
-            <img src="./logo.gif" alt="Logo">
-        </div>
+        <table>
+            <tr colspan="2">
+                <td>
+                    <img style="max-width: 40%;" src="./logo.gif" alt="Logo">
+                </td>
+            </tr>
+            <tr>
+                <td class="profile-picture">
+                    <img style="max-width: 30%;border-radius: 50%;" src="./1692369084351.jpg" alt="Foto">
+                </td>
+            </tr>
 
-        <!-- Spacer -->
-        <div class="spacer"></div>
+        </table>
         <!-- Profile section -->
-        <div class="columns columns-1">
-            <div>
-                <div class="profile-picture">
-                    <img style="max-width: 20%;border-radius: 50%;" src="./1692369084351.jpg" alt="Foto">
-                </div>
-                <div>
+        <table>
+            <tr>
+                <td>
                     <h1>Ana Sofía Dominguez Montangie</h1>
-                    <a target="_blank"href="https://www.linkedin.com/in/anasofiadm/" target:="_blank" class="first-button" role="first-button"><i class="bi bi-linkedin"></i>
+                    <a target="_blank" href="https://www.linkedin.com/in/anasofiadm/" target:="_blank"
+                        class="first-button" role="first-button"><i class="bi bi-linkedin"></i>
                         LinkedIn</a>
-                </div>
-            </div>
-        </div>
+                </td>
+            </tr>
+        </table>
 
         <!-- Spacer -->
         <div class="spacer"></div>
 
         <!-- About Me section -->
-        <div>
-            <h2>Sobre mí</h2>
-            <p style="text-align: justify;">Soy Ana Sofía. Apasionada por los lenguajes en todas
-                sus formas. Enseño Inglés a profesionales IT, también soy autodidacta y entusiasta del desarrollo web. Atraída por todo
-                lo visualmente atractivo. Creo que es bastante obvio que <em>side</em> del desarrollo me gusta más. Creo en hacer cosas que tengan impacto positivo, primeramente en mi vida,
-                y luego en la vida de los demás. Soy una humana en constante evolución. <b>En este portfolio soy <em>email developer</em></b>.</p>
-        </div>
+        <table>
+            <tr>
+                <td>
+                    <h2>Sobre mí</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align: justify;">Soy Ana Sofía. Apasionada por los lenguajes en todas
+                        sus formas. Enseño Inglés a profesionales IT, también soy autodidacta y entusiasta del
+                        desarrollo web. Atraída por todo
+                        lo visualmente atractivo. Creo que es bastante obvio que <em>side</em> del desarrollo me gusta
+                        más. Creo en hacer cosas que tengan impacto positivo, primeramente en mi vida,
+                        y luego en la vida de los demás. Soy una humana en constante evolución. <b>En este portfolio soy
+                            <em>email developer</em></b>.</p>
+                </td>
+            </tr>
+        </table>
 
         <!-- Spacer -->
         <div class="spacer"></div>
         <!-- Skills section -->
-        <div class="skills-section">
-            <h2>skills</h2>
-            <div class="skills-list">
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Bootstrap</li>
-                    <li>JavaScript</li>
-                </ul>
-            </div>
-            <div class="skills-list">
-                <ul>
-                    <li>Git & Github</li>
-                    <li>Firebase</li>
-                    <li>Github pages</li>
-                    <li>and +</li>
-                </ul>
-            </div>
-        </div>
+        <table class="skills-section">
+            <tbody>
+                <tr>
+                    <td rowspan="3"> 
+                        <h2>skills</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="skills-list">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                            <li>JavaScript</li>
+                            <li>Git & Github</li>
+                            <li>Firebase</li>
+                            <li>Github pages</li>
+                            <li>and +</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
         <!-- Spacer -->
         <div class="spacer"></div>
         <!-- Useful Links section -->
-        <div>
-            <h2>Links útiles</h2>
-            <div class="buttons">
-                <a href="https://www.behance.net/asofiadomie6ac" target="_blank"><i class="bi bi-code-slash"></i> Proyectos</a>
-                <a href="https://www.behance.net/asofiadomie6ac" target="_blank"><i class="bi bi-behance"></i> Behance</a>
-            </div>
-        </div>
-
+        <table>
+            <tr>
+                <td colspan="2">
+                    <h2>Proyectos</h2>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <h3>Email Promocional</h3>
+                    <a href="#"><i class="bi bi-arrow-up-right"></i></a>
+                </td>
+                <td>
+                    <h3>Boletín Informativo</h3>
+                    <a href="#"><i class="bi bi-arrow-up-right"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Email Transaccional</h3>
+                    <a href="#"><i class="bi bi-arrow-up-right"></i></a>
+                </td>
+                <td>
+                    <h3>Email de Bienvenida</h3>
+                    <a href="#"><i class="bi bi-arrow-up-right"></i></a>
+                </td>
+            </tr>
+        </table>
+        <div class="spacer"></div>
         <!-- Spacer -->
         <div class="spacer"></div>
-        
-    <!-- Footer -->
-    <div class="footer">
-        <img src="./logo.gif" alt="Logo">
-        <p>"Siempre creo. De creer y crear"</p>
-        <p>&copy; <span id="year"></span> Ana Sofía</p>
-    </div>
 
+        <!-- Footer -->
+        <table class="footer">
+            <tr>
+                <td>
+                    <img style="max-width: 25%;" src="./logo.gif" alt="Logo">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>"Siempre creo. De creer y crear"</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>&copy; <span id="year"></span> Ana Sofía</p>
+                </td>
+            </tr>
+        </table>
     </div>
     <!-- Script para obtener el año actual -->
     <script>
